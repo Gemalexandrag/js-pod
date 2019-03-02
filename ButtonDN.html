@@ -1,0 +1,28 @@
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <style>
+  button {
+    background-color: red;
+    border: none;
+    color: Blue;
+    padding: 50px 50px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+  </style>
+</head>
+<body>
+  Namea: <input type="text" id="myText" >
+  <button>Print Your Name</button>
+  <script>
+$("button").click(()=>{
+  const text=$("#words").val();
+  $("#myText").append(`${myText}<br>`)
+})
+  </script>
+
+</body>
+</html>
