@@ -15,12 +15,14 @@
   </style>
 </head>
 <body>
+
   Namea: <input type="text" id="myText" >
   <button>Print Your Name</button>
+  <p id="place"></p>
   <script>
 $("button").click(()=>{
-  const text=$("#words").val();
-  $("#myText").append(`${myText}<br>`)
+  const text=$("#myText").val();
+  $("#place").append(`${text}<br>`)
 })
   </script>
 

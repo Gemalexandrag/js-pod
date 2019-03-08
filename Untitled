@@ -1,0 +1,21 @@
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+  <input type="number" id="n1" >
+  <input type="number" id="n2">
+  <button type="button" name="addtion">+</button>
+  <script>
+  let a = n1;
+  let b = n2;
+
+  function add(){
+    a + b
+  }
+  $("button").click((){
+   add()
+})
+  </script>
+</body>
+</html>

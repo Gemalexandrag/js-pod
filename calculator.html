@@ -1,0 +1,27 @@
+<html>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+  <input type="number" id="n1" />
+  <input type="number" id="n2"/>
+  <button type="button" name="addtion" id="bu">+</button>
+  <p id="place">  </p>
+  <script>
+
+  function add(a,b){
+    const c = a + b;
+    return c;
+  };
+
+  $("#bu").click(()=>{
+    const a = $('#n1').val();
+    const b = $('#n2').val();
+
+   $("#place").html(add(a,b));
+});
+
+
+  </script>
+</body>
+</html>
