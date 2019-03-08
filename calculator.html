@@ -1,27 +1,64 @@
 <html>
+
 <head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
+
 <body>
   <input type="number" id="n1" />
-  <input type="number" id="n2"/>
-  <button type="button" name="addtion" id="bu">+</button>
-  <p id="place">  </p>
+  <input type="number" id="n2" />
+  <button type="button" name="sub" id="buttons">-</button>
+  <button type="button" name="multi" id="buttonm">*</button>
+  <button type="button" name="divi" id="buttond">/</button>
+  <p id="place"> </p>
   <script>
+    function add(a, b) {
+      const c = a + b;
+      return c;
+    };
 
-  function add(a,b){
-    const c = a + b;
-    return c;
-  };
+    function subtract(a, b) {
+      const c = a - b;
+      return c;
+    };
 
-  $("#bu").click(()=>{
-    const a = $('#n1').val();
-    const b = $('#n2').val();
+    function m(a, b) {
+      const c = a * b;
+      return c;
+    };
 
-   $("#place").html(add(a,b));
-});
+    function d(a, b) {
+      const c = a / b;
+      return c;
+    };
 
+    $("#buttona").click(() => {
+      const a = $('#n1').val();
+      const b = $('#n2').val();
+      $("#place").html(add(a, b)).attr(color,"blue");;
+    });
 
+    $("#buttons").click(() => {
+      const a = $('#n1').val();
+      const b = $('#n2').val();
+
+      $("#place").html(subtract(a, b));
+    });
+
+    $("#buttonm").click(() => {
+      const a = $('#n1').val();
+      const b = $('#n2').val();
+
+      $("#place").html(m(a, b));
+    });
+
+    $("#buttond").click(() => {
+      const a = $('#n1').val();
+      const b = $('#n2').val();
+
+      $("#place").html(d(a, b));
+    });
   </script>
 </body>
+
 </html>
