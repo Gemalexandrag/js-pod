@@ -7,6 +7,7 @@
 <body>
   <input type="number" id="n1" />
   <input type="number" id="n2" />
+  <input type="number" id="n3" />
   <button type="button" name="sub" id="buttons">-</button>
   <button type="button" name="multi" id="buttonm">*</button>
   <button type="button" name="divi" id="buttond">/</button>
@@ -35,27 +36,28 @@
     $("#buttona").click(() => {
       const a = $('#n1').val();
       const b = $('#n2').val();
-      $("#place").html(add(a, b)).attr(color,"blue");;
+      const d = $('#n3').val();
+      $("#place").html(add(a, b))
     });
 
     $("#buttons").click(() => {
       const a = $('#n1').val();
       const b = $('#n2').val();
-
+      const d = $('#n3').val();
       $("#place").html(subtract(a, b));
     });
 
     $("#buttonm").click(() => {
       const a = $('#n1').val();
       const b = $('#n2').val();
-
+      const d = $('#n3').val();
       $("#place").html(m(a, b));
     });
 
     $("#buttond").click(() => {
       const a = $('#n1').val();
       const b = $('#n2').val();
-
+      const d = $('#n3').val();
       $("#place").html(d(a, b));
     });
   </script>
