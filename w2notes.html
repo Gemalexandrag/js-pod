@@ -1,0 +1,84 @@
+<html>
+
+<head>
+  */to link files together
+  <link rel="stylesheet" type="text/css" href="theme.css">
+  <script>
+    //FUNCTIONS
+
+
+    //function:
+    const functionName() => {
+      ....
+    };
+
+    //to call function:
+    functionName()
+
+    //example of paramters
+    const params(a, b, c) => {
+      console.log(a, b, c)
+    }
+
+    params(1, 2, 3) //returns 6
+
+
+
+    //IF/ELSE
+
+    if (weather === "rainy") {
+      $("body").attr("style",
+        "background-color: gray") //selects body
+
+    }else if (weather === "sunny") {
+      $("body").attr("style",
+        "background-color: yellow;");
+
+    }else if (weather === "snowing") {
+      $("body").attr("style",
+        "background-color:pink");
+    }else {
+      $("body").attr("style",
+        "background-color: green")
+    }
+
+    //page color changes based on the weather
+
+    if () {
+
+    } else {
+
+    }
+
+// ARRAY
+
+
+let roster = ["gem", "malici", "mary"]
+// to get gem, 0
+console.log(roster[0])
+
+//to add max: 3
+roster.push("max");
+
+roster.length //:4
+
+
+
+//LOOPSSSSSS
+
+
+//for loops
+for(let count = 1; count <= 100; count++){
+  if (count % 10 == 0) {
+   $("body").append(`<p style="color: red">${count}</p>`);
+  } else {
+      $("body").append(`<p>${count}</p>`);
+  }
+};
+  </script>
+</head>
+
+<body>
+</body>
+
+</html>

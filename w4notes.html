@@ -1,0 +1,99 @@
+<html>
+<head>
+</head>
+<body>
+  <script>
+  //Area of a rectangle
+  function Rect(x,y){
+    return x * y;
+
+  }
+  console.log(Rect(1,2))
+  //this returns 2
+
+//------------------------------------------------------------
+//Area of a circle
+  const p = 3.14169
+  function circ(r){
+
+    return p * r * r;
+  }
+  console.log(circ( 2))
+
+//------------------------------------------------------------
+
+
+
+function grade(a){
+  if (25 < a && a <= 30){
+    console.log("a");
+  } else if(20 < a && a <= 25){
+    console.log("b")
+  } else if(15 < a && a <= 20){
+    console.log("c")
+  } else if(0 < a && a<= 15){
+    console.log("F")
+  }
+    else{
+      console.log("oof")
+    }
+  }
+
+grade(12);
+
+//
+
+
+
+
+//SWITCHHHHH
+
+
+function days(x) {
+  switch(x){
+    case "s" : console.log("Sunday")
+    break;
+
+    case "n" : console.log("monday")
+    break;
+
+  }
+}
+  console.log(days("s"))
+
+  //------------------------------------------------------------
+  //calc
+  function calc(a,b,c){
+switch(b)
+{
+case "mul" : l = a * c;
+console.log(l)
+break;
+
+case "add" : l = a + c;
+console.log(l)
+break;
+
+case "sub" : l = a - c;
+console.log(a - b)
+break;
+
+case "div" : l = a / c;
+console.log(l)
+break;
+}
+}
+calc(2,"div",2);
+////
+
+
+
+
+//loops
+
+for(let count = 1; count <= 100; count++){
+count(i)
+};
+  </script>
+</body>
+</html>
