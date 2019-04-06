@@ -1,11 +1,11 @@
+let paintColor = "white";
 
-$("#pinkB").click(colorChangePink(){
-  $("tr").click(colorChangePink(){
-    $("tr").attr("color","pink");
-  });
+$("td").click((e) => {
+ console.log(paintColor);
+ $(e.target).attr("style", "background-color:" + paintColor);
 });
-$("#blackB").click(colorChangeblack(){
-  $("tr").click(colorChangeblack(){
-    $("tr").attr("color","pink");
-  });
+
+$("#color-palette div").click((e) => {
+  paintColor = $(e.target).attr("class");
+  console.log(paintColor);
 });
